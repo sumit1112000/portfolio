@@ -1,20 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sumit Tiwari | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="font-family: Arial; text-align:center;">
-  <h1>Hello 👋 I'm Sumit Tiwari</h1>
-  <p>I am a Full Stack Developer (.NET, Angular, SQL , Azure)</p>
-  
-  <h2>Projects</h2>
-  <ul style="list-style:none;">
-    <li><b>Project 1:</b> Employee Management System</li>
-    <li><b>Project 2:</b> E-commerce App</li>
-  </ul>
+<body class="bg-gray-100 text-gray-900 font-sans">
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:sumittiwari111200@gmail.com">sumittiwari111200@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/sumit1112000">sumit1112000</a></p>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">Sumit Tiwari</h1>
+      <div class="space-x-6">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h2 class="text-5xl font-extrabold mb-4">Hi, I'm Sumit 👋</h2>
+    <p class="text-xl mb-6">Full Stack Developer | .NET & Angular</p>
+    <a href="#projects" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200">
+      View My Work
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto p-12">
+    <h3 class="text-3xl font-bold mb-6 text-center">About Me</h3>
+    <p class="text-lg text-gray-700 leading-relaxed text-center">
+      I’m a passionate developer with expertise in .NET, Angular, and modern web technologies.
+      I love building scalable apps and solving real-world problems. Currently exploring cloud technologies and DevOps tools.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-200 py-12">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Project Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition">
+          <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full">
+          <div class="p-6">
+            <h4 class="font-bold text-lg">Employee Management System</h4>
+            <p class="text-gray-600 text-sm mt-2">A .NET web app to manage employees, roles, and payroll.</p>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" class="text-blue-600 font-semibold">Live</a>
+              <a href="#" class="text-blue-600 font-semibold">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition">
+          <img src="https://via.placeholder.com/400x200" alt="Project 2" class="w-full">
+          <div class="p-6">
+            <h4 class="font-bold text-lg">E-commerce Store</h4>
+            <p class="text-gray-600 text-sm mt-2">Full-stack shopping site with Angular frontend & .NET backend.</p>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" class="text-blue-600 font-semibold">Live</a>
+              <a href="#" class="text-blue-600 font-semibold">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition">
+          <img src="https://via.placeholder.com/400x200" alt="Project 3" class="w-full">
+          <div class="p-6">
+            <h4 class="font-bold text-lg">Task Tracker</h4>
+            <p class="text-gray-600 text-sm mt-2">A productivity tool to track tasks, deadlines, and goals.</p>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" class="text-blue-600 font-semibold">Live</a>
+              <a href="#" class="text-blue-600 font-semibold">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto py-12 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Skills</h3>
+    <p class="text-lg text-gray-700">.NET | C# | Angular | SQL | JavaScript | HTML | CSS | React</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-900 text-white py-12 text-center">
+    <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+    <p class="mb-2">📧 Email: <a href="mailto:sumit@example.com" class="text-blue-400">sumit@example.com</a></p>
+    <p class="mb-2">💻 GitHub: <a href="https://github.com/sumit1112000" class="text-blue-400">sumit1112000</a></p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/sumit1112000" class="text-blue-400">sumit1112000</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-4">
+    © 2025 Sumit Tiwari. All rights reserved.
+  </footer>
+
 </body>
 </html>
